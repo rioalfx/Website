@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Comic Website</h1>
+    </header>
+    <main>
+        <div class="comic-grid">
+            <div class="comic" data-id="1">
+                <img src="comic1.jpg" alt="Comic 1">
+                <h2>Comic Title 1</h2>
+            </div>
+            <div class="comic" data-id="2">
+                <img src="comic2.jpg" alt="Comic 2">
+                <h2>Comic Title 2</h2>
+            </div>
+            <!-- Add more comics as needed -->
+        </div>
+    </main>
+    <div id="comicModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Comic Detail">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
